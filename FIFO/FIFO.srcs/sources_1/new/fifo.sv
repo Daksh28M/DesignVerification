@@ -40,6 +40,7 @@ module fifo(
             wptr <= 4'b0;
             rptr <= 4'b0;
             cnt <= 5'b0;
+            dout <= 7'b0;
         end
         else if(wr && !full) begin
             mem[wptr] <= din;

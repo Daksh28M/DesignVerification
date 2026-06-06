@@ -1,0 +1,79 @@
+Time resolution is 1 ps
+[DRV]: RESET DONE
+---------------------------------
+[GEN]: Oper: 1 iteration: 1
+[DRV]: DATA WRITE data: 228
+[MON]: wr: 1 rd: 0 din: 228 dout: 0 full: 0 empty: 1
+[SCO]: wr: 1 rd: 0 din: 228 dout: 0 full: 0 empty: 1
+[SCO]: DATA STORED IN QUEUE data_in: 228
+---------------------------------
+[GEN]: Oper: 1 iteration: 2
+[DRV]: DATA WRITE data: 41
+[MON]: wr: 1 rd: 0 din: 41 dout: 0 full: 0 empty: 0
+[SCO]: wr: 1 rd: 0 din: 41 dout: 0 full: 0 empty: 0
+[SCO]: DATA STORED IN QUEUE data_in: 41
+---------------------------------
+[GEN]: Oper: 1 iteration: 3
+[DRV]: DATA WRITE data: 67
+[MON]: wr: 1 rd: 0 din: 67 dout: 0 full: 0 empty: 0
+[SCO]: wr: 1 rd: 0 din: 67 dout: 0 full: 0 empty: 0
+[SCO]: DATA STORED IN QUEUE data_in: 67
+---------------------------------
+[GEN]: Oper: 1 iteration: 4
+[DRV]: DATA WRITE data: 80
+[MON]: wr: 1 rd: 0 din: 80 dout: 0 full: 0 empty: 0
+[SCO]: wr: 1 rd: 0 din: 80 dout: 0 full: 0 empty: 0
+[SCO]: DATA STORED IN QUEUE data_in: 80
+---------------------------------
+[GEN]: Oper: 1 iteration: 5
+[DRV]: DATA WRITE data: 116
+[MON]: wr: 1 rd: 0 din: 116 dout: 0 full: 0 empty: 0
+[SCO]: wr: 1 rd: 0 din: 116 dout: 0 full: 0 empty: 0
+[SCO]: DATA STORED IN QUEUE data_in: 116
+---------------------------------
+[GEN]: Oper: 1 iteration: 6
+[DRV]: DATA WRITE data: 255
+[MON]: wr: 1 rd: 0 din: 255 dout: 0 full: 0 empty: 0
+[SCO]: wr: 1 rd: 0 din: 255 dout: 0 full: 0 empty: 0
+[SCO]: DATA STORED IN QUEUE data_in: 255
+---------------------------------
+[GEN]: Oper: 1 iteration: 7
+[DRV]: DATA WRITE data: 20
+[MON]: wr: 1 rd: 0 din: 20 dout: 0 full: 0 empty: 0
+[SCO]: wr: 1 rd: 0 din: 20 dout: 0 full: 0 empty: 0
+[SCO]: DATA STORED IN QUEUE data_in: 20
+---------------------------------
+[GEN]: Oper: 1 iteration: 8
+[DRV]: DATA WRITE data: 87
+[MON]: wr: 1 rd: 0 din: 87 dout: 0 full: 0 empty: 0
+[SCO]: wr: 1 rd: 0 din: 87 dout: 0 full: 0 empty: 0
+[SCO]: DATA STORED IN QUEUE data_in: 87
+---------------------------------
+[GEN]: Oper: 0 iteration: 9
+[DRV]: DATA READ
+[MON]: wr: 0 rd: 1 din: 87 dout: 228 full: 0 empty: 0
+[SCO]: wr: 0 rd: 1 din: 87 dout: 228 full: 0 empty: 0
+[SCO]: DATA MATCH
+---------------------------------
+[GEN]: Oper: 0 iteration: 10
+[DRV]: DATA READ
+[MON]: wr: 0 rd: 1 din: 87 dout: 41 full: 0 empty: 0
+[SCO]: wr: 0 rd: 1 din: 87 dout: 41 full: 0 empty: 0
+[SCO]: DATA MATCH
+---------------------------------
+[GEN]: Oper: 0 iteration: 11
+[DRV]: DATA READ
+[MON]: wr: 0 rd: 1 din: 87 dout: 67 full: 0 empty: 0
+[SCO]: wr: 0 rd: 1 din: 87 dout: 67 full: 0 empty: 0
+[SCO]: DATA MATCH
+---------------------------------
+[GEN]: Oper: 1 iteration: 12
+[DRV]: DATA WRITE data: 39
+[MON]: wr: 1 rd: 0 din: 39 dout: 67 full: 0 empty: 0
+[SCO]: wr: 1 rd: 0 din: 39 dout: 67 full: 0 empty: 0
+[SCO]: DATA STORED IN QUEUE data_in: 39
+---------------------------------
+---------------------------------
+Error Count: 0
+---------------------------------
+$finish called at time : 810 ns : File "E:/VerilogProjects/Verifications/FIFO/FIFO.srcs/sim_1/new/tb_top.sv" Line 260

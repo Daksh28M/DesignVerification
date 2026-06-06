@@ -1,0 +1,2 @@
+Breakpoint File Version 1.0
+181,true,"E:/VerilogProjects/Verifications/FIFO/FIFO.srcs/sim_1/new/tb_top.sv"

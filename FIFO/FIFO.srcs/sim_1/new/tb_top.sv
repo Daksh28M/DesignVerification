@@ -19,7 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-class transaction
+class transaction;
     rand bit oper;
 
     bit clk;
@@ -40,7 +40,7 @@ class transaction
     }
 endclass
 
-class generator
+class generator;
     transaction tr;
     mailbox #(transaction) mbx;
 
@@ -95,7 +95,7 @@ class driver;
         fif.rst <= 1'b0;
         fif.rd <= 1'b0;
         fif.wr <= 1'b1;
-        fif.din <= urandom_range([1:255]);
+        fif.din <= $urandom_range(1,255);
         @(posedge fif.clk);
         fif.wr <= 1'b0;
         $display("[DRV]: DATA WRITE data: %0d",fif.din);
@@ -218,9 +218,9 @@ class environment;
 
     event nextgs;
 
-    virtual fifo_if vif;
+    virtual fifo_if fif;
     
-    function new(virtual fifo_if vif);
+    function new(virtual fifo_if fif);
         gdmbx = new();
         gen = new(gdmbx);
         drv = new(gdmbx);
@@ -268,7 +268,7 @@ endtask
 
 endclass
 
-module tb_top(
+module tb_top;
     fifo_if fif();
 
     fifo dut(
@@ -292,7 +292,7 @@ module tb_top(
 
     initial begin
         env = new(fif);
-        env.gen.count(50);
+        env.gen.count = 12;
         env.run();
     end
     
@@ -300,7 +300,4 @@ module tb_top(
         $dumpfile("fifo_dump.vcd");
         $dumpvars();
     end
-
-
-    );
 endmodule
